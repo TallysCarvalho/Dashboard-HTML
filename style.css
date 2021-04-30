@@ -103,12 +103,10 @@ header{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
+    transition: left 500ms;
     
 }
 
-.main-content header{
-    transition: left 500ms;
-}
 
 .search-wrapper{
     display: flex;
@@ -350,4 +348,66 @@ background-image: url(/images/perfil.jpg);
     border:1px solid var(--main-color);
     border-radius: 4px;
     padding: .4rem 1rem;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+
+@media only screen and (max-width:1200px){
+
+    .sidebar{
+        width:60px;
+    }
+    .sidebar .sidebar-header h3 span:last-child,
+    .sidebar li span:last-child{
+     display: none;
+    }
+    
+    .sidebar .sidebar-header,
+    .sidebar li{
+    display: flex;
+    justify-content: center;
+    }
+    
+   .main-content{
+        margin-left: 60px;
+    }
+    
+    .main-content header{
+        left: 60px;
+       
+    }
+
+    
+}
+
+@media only screen and (max-width:860px){
+    .dashboard-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card-single{
+        margin-bottom: 1rem;
+    }
+
+    .activity-grid {
+        display: block;
+    }
+
+    .summary{
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .dashboard-cards{
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+main{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 }
