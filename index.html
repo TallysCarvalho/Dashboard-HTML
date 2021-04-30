@@ -11,13 +11,14 @@
 </head>
 
 <body>
+    <input type="checkbox" id="sidebar-toggle">
     <div class="sidebar">
         <div class="sidebar-header">
             <h3 class="brand">
                 <span class="ti-unlink"></span>
                 <span>easywire</span>
             </h3>
-            <span class="ti-menu-alt"></span>
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
         </div>
 
         <div class="sidebar-menu">
@@ -145,7 +146,7 @@
                 <div class="activity-grid">
                     <div class="activity-card">
                         <h3>Recent Activity</h3>
-    
+
                         <table>
                             <thead>
                                 <tr>
@@ -161,7 +162,7 @@
                                     <td>App Development</td>
                                     <td>15 Aug, 2020</td>
                                     <td>22 Aug, 2020</td>
-                                    <td>
+                                    <td class="td-team">
                                         <div class="img-1"></div>
                                         <div class="img-2"></div>
                                         <div class="img-3"></div>
@@ -170,12 +171,12 @@
                                         <span class="badge success">Success</span>
                                     </td>
                                 </tr>
-                                
+
                                 <tr>
                                     <td>Front-end Design</td>
                                     <td>15 Aug, 2020</td>
                                     <td>22 Aug, 2020</td>
-                                    <td>
+                                    <td class="td-team">
                                         <div class="img-1"></div>
                                         <div class="img-2"></div>
                                         <div class="img-3"></div>
@@ -189,7 +190,7 @@
                                     <td>Web Development</td>
                                     <td>15 Aug, 2020</td>
                                     <td>22 Aug, 2020</td>
-                                    <td>
+                                    <td class="td-team">
                                         <div class="img-1"></div>
                                         <div class="img-2"></div>
                                         <div class="img-3"></div>
@@ -203,13 +204,13 @@
                                     <td>Logo Design</td>
                                     <td>15 Aug, 2020</td>
                                     <td>22 Aug, 2020</td>
-                                    <td>
+                                    <td class="td-team">
                                         <div class="img-1"></div>
                                         <div class="img-2"></div>
                                         <div class="img-3"></div>
                                     </td>
                                     <td>
-                                        <span class="badge success">Success</span>
+                                        <span class="badge warning">Warning</span>
                                     </td>
                                 </tr>
 
@@ -217,13 +218,13 @@
                                     <td>Server Setup</td>
                                     <td>15 Aug, 2020</td>
                                     <td>22 Aug, 2020</td>
-                                    <td>
+                                    <td class="td-team">
                                         <div class="img-1"></div>
                                         <div class="img-2"></div>
                                         <div class="img-3"></div>
                                     </td>
                                     <td>
-                                        <span class="badge success">Success</span>
+                                        <span class="badge warning">Warning</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -258,22 +259,24 @@
                         </div>
 
                         <div class="bday-card">
-                            <div class="bday-img"></div>
-                            <div class="bday-info">
-                                <h5>Dwayne F. Sanders</h5>
-                                <small>Birthday Today</small>
-
-                                <div>
-                                    <button>
-                                        <span class="ti-gift"></span>
-                                        Wish him
-                                    </button>
+                            <div class="bday-flex">
+                                <div class="bday-img"></div>
+                                <div class="bday-info">
+                                    <h5>Dwayne F. Sanders</h5>
+                                    <small>Birthday Today</small>
                                 </div>
                             </div>
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-gift"></span>
+                                    Wish him
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-              
+
 
             </section>
         </main>
