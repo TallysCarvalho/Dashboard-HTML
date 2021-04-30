@@ -158,5 +158,14 @@ main{
 }
 
 .card-footer a {
+    color:var(--main-color);
+}
 
+.recent{
+    margin-top: 3rem;
+}
+
+.activity-grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
 }
